@@ -3,6 +3,7 @@ import { getCategories, getProducts, taka, percent } from "@/lib/products";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import SignOutButton from "@/components/SignOutButton";
+import CategoryLinks from "@/components/CategoryLinks";
 
 function banglaDate() {
   return new Intl.DateTimeFormat("bn-BD", { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Dhaka" }).format(new Date());
